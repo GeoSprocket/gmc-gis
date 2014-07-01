@@ -37,12 +37,12 @@ omnivore.csv('https://docs.google.com/spreadsheet/pub?key=0AsDSuiodUlFIdEprcDlaU
     // values, so adjust to fit.
     this.eachLayer(function(marker) {
       marker.setIcon(L.mapbox.marker.icon({
-            'marker-color': '#ffe766',
-            'marker-size': 'large',
+            'marker-color': '#63B8FF',
+            'marker-size': 'medium',
             'marker-symbol': 'rocket'
         }));
       // Bind a popup to each icon based on the same properties
-      marker.bindPopup('<h2>' + marker.toGeoJSON().properties.Name + '</h2><p>' +
+      marker.bindPopup('<h1>' + marker.toGeoJSON().properties.Name + '</h1><p>' +
          marker.toGeoJSON().properties.Bio + '</p>');
     });
   })
